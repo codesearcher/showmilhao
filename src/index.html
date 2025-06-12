@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- div w3-include-html="snd.html" ></div> -->
+    <script src=perg.js></script> <!-- -->
+    <script src=sm.js></script> <!-- Show do Milhao -->
+    <!-- script src=snd.js></script> <!-- Carrega sons -->
+    <!-- audio controls id='ap1' >   <source src="./snd/1000.wav" type="audio/wav"></audio> -->
+</head>
+<body>
+ <header><table style='border:0px;'>
+  <tr><td>Jogador: <label id=player></label></td>
+  <td>Banco perguntas: <label id=bank></label></td>
+  <td> Pergunta: <input type=text id=numperg size=5 disabled /></td>
+  <td> Ordem: <input type=text id=ordem size=5 disabled /></td>
+  <td> Resp: <input type=text id=resp size=5 disabled /></td>
+  <td> Tempo: <label id=time size=3 disabled ></labellabel></td>
+  </tr></table>
+ </header>
+  <audio controls id='ap1' hidden >   <source src="snd/1000.wav" type="audio/wav"></audio>
+  <audio controls id='ap2' hidden >   <source src="snd/2000.wav" type="audio/wav"></audio>
+  <audio controls id='ap3' hidden >   <source src="snd/3000.wav" type="audio/wav"></audio>
+  <audio controls id='ap4' hidden >   <source src="snd/4000.wav" type="audio/wav"></audio>
+  <audio controls id='ap5' hidden >   <source src="snd/5000.wav" type="audio/wav"></audio>
+  <audio controls id='ap6' hidden >   <source src="snd/10000.wav" type="audio/wav"></audio>
+  <audio controls id='ap7' hidden >   <source src="snd/20000.wav" type="audio/wav"></audio>
+  <audio controls id='ap8' hidden >   <source src="snd/30000.wav" type="audio/wav"></audio>
+  <audio controls id='ap9' hidden >   <source src="snd/40000.wav" type="audio/wav"></audio>
+  <audio controls id='ap10' hidden >   <source src="snd/50000.wav" type="audio/wav"></audio>
+  <audio controls id='ap11' hidden >   <source src="snd/100000.wav" type="audio/wav"></audio>
+  <audio controls id='ap12' hidden >   <source src="snd/200000.wav" type="audio/wav"></audio>
+  <audio controls id='ap13' hidden >   <source src="snd/300000.wav" type="audio/wav"></audio>
+  <audio controls id='ap14' hidden >   <source src="snd/400000.wav" type="audio/wav"></audio>
+  <audio controls id='ap15' hidden >   <source src="snd/500000.wav" type="audio/wav"></audio>
+  <audio controls id='ap16' hidden >   <source src="snd/1000000.wav" type="audio/wav"></audio> 
+  <audio controls id='boasorte' hidden >   <source src="snd/boasorte.wav" type="audio/wav"></audio> 
+  <audio controls id='certeza1' hidden >   <source src="snd/Certeza1.wav" type="audio/wav"></audio> 
+  <audio controls id='certeza2' hidden >   <source src="snd/Certeza2.wav" type="audio/wav"></audio> 
+  <audio controls id='certeza3' hidden >   <source src="snd/Certeza3.wav" type="audio/wav"></audio> 
+  <audio controls id='correta' hidden >   <source src="snd/Correta.wav" type="audio/wav"></audio> 
+  <audio controls id='Errada' hidden >   <source src="snd/Errada.wav" type="audio/wav"></audio> 
+  <audio controls id='faltapeito' hidden >   <source src="snd/faltapeito.wav" type="audio/wav"></audio> 
+  <audio controls id='carta' hidden >   <source src="snd/Carta.wav" type="audio/wav"></audio> 
+ <main>
+  <label id=questao></label></td>
+  <div></div><div style='background-image: url(img/fundo.jpg);transform:scale(1.0); background-repeat:no-repeat;'>
+   <table style='font-size:24.5px;'>
+    <tr><td> </td><td><input type='radio' id='r1' name='r' value='1'><label for=r1 id=_r1></label></td></tr><tr></tr>
+    <tr><td> </td><td><input type='radio' id='r2' name='r' value='2'><label for=r2 id=_r2></label></td></tr><tr></tr>
+    <tr><td> </td><td><input type='radio' id='r3' name='r' value='3'><label for=r3 id=_r3></label></td></tr><tr></tr>
+    <tr><td> </td><td><input type='radio' id='r4' name='r' value='4'><label for=r4 id=_r4></label></td></tr><tr></tr>
+   <br></table></div>
+   <div><img id=ouro src=''/></div>
+    <script></script>
+ <div></div></main>
+ <footer id=footer style='position: absolute;
+   bottom: 0;  width: 100%;  height: 2.5rem; '><div>
+  <input type=button id=parar onclick='parar();' value='Parar' />
+  <input type=button id=alex onclick='alex_();' value='Alex (inteligência Artificial)' />
+  <input type=button id=cartas onclick='cartas_();' value='Cartas' />
+  <input type=button id=pular onclick='pular();' value='Pular (3)' />
+  <input type=button id=prox onclick='corrigir();' value='Próxima pergunta' />
+  <input type=button id=comecar onclick='inicializacao();' value='Começar o jogo' />
+  <input type=checkbox id=nosound onclick='noSound();' value='Sem som' /> Ativa/desativa o som
+ </div></footer>
+</body>
+
+</html>
