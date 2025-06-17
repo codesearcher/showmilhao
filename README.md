@@ -1,4 +1,4 @@
 # Show do Milhão
 A Javascript version of a quizz game inspired by "Who Wants to Be a Millionaire" show.
 
-(Nothing coded by now, I'll add some code probabilly at start of june/2025)
+(Just main JavaScript file coded by now, I'll add some more code probabilly at end of june/2025)
